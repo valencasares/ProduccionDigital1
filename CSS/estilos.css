@@ -19,12 +19,20 @@ h3 {
     justify-content:left;
     padding: 2%
 }
-
-body h3 img {
-    max-width: 400px;
-    max-height: 500px;
-    margin-left: 20%;
+h4 {
+    font-size: 20px;
+    color: #375394;
+    
 }
+
+
+img {
+    width: 230px;
+    height: 120px;
+    float: right;
+    margin-right: 3%;
+}
+
 
 h1 {
     display: flex;
@@ -34,6 +42,51 @@ h1 {
     font-family: 'Zilla Slab', serif;
     font-size: 80px;
     color: #375394;
+
+}
+
+
+ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+
+li {
+    display: inline;
+    text-align: center;
+    
+}
+li a {
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+li a:hover{
+    background-color: #245857;
+    color: #d3d5e7;
+}
+  
+section ul li {
+    font-size: 25px;
+}
+
+
+section ul img {
+    float: right;
+    margin-right: 5%;
+}
+
+.icon {
+    display: none;
+}
+
+.terciario {
+    display: flex;
+    justify-content: center;
+    
 }
 
 section {
@@ -44,28 +97,31 @@ section {
     justify-content:space-around;
 }
 
-section p {
-    margin-top: 2%;
-}
 
 a {
     text-decoration: none;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 30px;
     margin: 7px; 
     padding: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
-    font-size: 25px;
+    font-size: 20px;
     margin: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 article section a {
     margin-top: 2%;
     margin-bottom: 2em;
+    display: inline-block;
+    justify-content: space-around;
+
+    
 }
 
 article {
@@ -79,7 +135,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 100px;
     background-color: #375394;
 
 }
@@ -92,4 +148,88 @@ footer img {
     max-width: 2.5rem;
 
 
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-wrap: wrap;
+    }
+    nav ul { display: none; }
+    .icon { display: block; padding-top: 2rem; padding-left: 2rem; }
+    header div, header nav {
+        flex: 1 0 50%;
+    }
+    header nav {
+        flex-basis: 100%;
+    }
+    nav ul {
+        display: none;
+    }
+    nav.responsive ul {
+        display: block;
+        width: 100%;
+    }
+    section {  
+        max-width: 480px;
+        width: 100%;
+    }
+    img {
+        width: 165px;
+        height: 100px;
+        margin-left: 20%;
+    }
+    body h3 {
+        font-family: 'Libre Baskerville', serif;
+        font-family: 'Special Elite', cursive;
+        font-family: 'Zilla Slab', serif;
+        font-size: 25px;
+        color: #375394;
+        display: flex;
+        justify-content:left;
+        padding: 2%
+    }
+    header h1 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Libre Baskerville', serif;
+        font-family: 'Special Elite', cursive;
+        font-family: 'Zilla Slab', serif;
+        font-size: 40px;
+        color: #375394;
+    }
+    h1 a {
+        margin-right: 35%;
+    }
+    p {
+        font-size: 15px;
+        margin: 3%;
+    }
+    section div a {
+        margin-left: 10%;
+        
+        
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        background-color: #375394;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    footer img {
+        padding-top: 3rem;
+        width: 100%;
+        height: auto;
+        margin-right: 1%;
+        margin-bottom: 10%;
+        max-width: 2.5rem;
+    
+    
+    }
+    nav {
+        font-size: 20px;
+    }
 }

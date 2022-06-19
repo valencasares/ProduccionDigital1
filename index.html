@@ -3,41 +3,50 @@
 <head> 
     <title>The Office Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Special+Elite&family=Zilla+Slab:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="CSS/estilos.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/est.css" /> 
     <link rel="stylesheet" href="CSS/lightbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
  
 <body>
-     <h3>
-       The Office Blog 
-       <img src="imagenes/theofficelogo.png">
-    </h3>
+     <h3>The Office Blog </h3>
+     <img src="imagenes/theofficelogo.png">
 
 
   <header>
-    <h1>Stress Relief pt1</h1> 
+    <h1>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      Stress Relief
+    </h1> 
+
     <section>
-      <nav>
-        <a href="Clip.html">Clip</a>
 
-        <a href="Personajes.html">Personajes</a>
+      <nav id="navegador">
+        <ul>
+         <li><a href="Clip.html">Clip</a></li>
 
-        <a href="Info.html">Informacion</a>
+         <li><a href="Personajes.html">Personajes</a></li>
 
-        <a href="criticas.html">Criticas</a>
+         <li><a href="Info.html">Informacion</a></li>
+
+         <li><a href="criticas.html">Criticas</a></li>
+
+         <li><a href="formulario.html">Contacto</a></li>
+      </ul>
       </nav>
     </section>
-  </heder>
+  </header>
   
  
-    <h5>Bienvenidos al Blog de The Office!! Aca vas a poder ver todo acerca del capitulo "Stress Relief". Este es uno de los mejores capitulos de toda la serie, tan bueno que se merece su propio blog.  </h5>
+    <h5>Bienvenidos al Blog de The Office!! Acá vas a poder ver todo acerca del capítulo "Stress Relief". Este es uno de los mejores capítulos de toda la serie, tan bueno que se merece su propio blog.  </h5>
      <p>(Para los nuevos fans) The Office es una serie de televisión estadounidense de humor ambientada en una oficina regional de venta de papel radicada en la localidad de Scranton, en Pensilvania (Estados Unidos). Adaptada a partir de la serie británica del mismo nombre, se estrenó en la cadena de televisión estadounidense National Broadcasting Company (NBC) el 24 de marzo de 2005.</p>
 
   
-     <p>Galeria de fotos:</p>
+    <h3>Galeria de fotos</h3>
  <article>
-    <section>
-      <div>
+    <section class="primario">
+      <div class="galeria">
        <a class="example-image-link" href="imagenes/theoffice05.jpeg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="imagenes/theoffice5.jpg" alt=""/></a>
        <a class="example-image-link" href="imagenes/theoffice1.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="imagenes/theoffice0001.jpg" alt="" /></a>
        <a class="example-image-link" href="imagenes/theoffice3.jpeg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="imagenes/theoffice003.jpg" alt="" /></a>
@@ -56,6 +65,16 @@
 
  
  </body>
+<script type="text/javascript">
+  function myFunction(){
+    let x = document.getElementById("navegador")
+    if (x.className !== "responsive"){
+        x.className = "responsive"; 
+  }  else {
+       x.className = navegador; 
+  }
+}
+</script> 
 
  </html>
 

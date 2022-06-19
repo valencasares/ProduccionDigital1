@@ -53,6 +53,11 @@ div {
 
 }
 
+.terciario {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -60,24 +65,22 @@ footer {
     height: 200px;
     background-color: #375394;
     font-size: 20px;
-
+    flex-direction: column;
 }
 
-footer div a {
-    display: block;
-    justify-content: center;
-    font-size: 30px;
-    color: aliceblue;
-    
-}
-
-
-footer p {
+p {
     font-size: 20px;
-    text-align: center;
-    display: block;
+    margin: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #375394;
 
+}
 
 footer img {
     padding-top: 3rem;

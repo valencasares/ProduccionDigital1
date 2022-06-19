@@ -12,13 +12,15 @@ h1 {
     color: #375394;
 }
 h2 {
-    text-transform: uppercase;
+    display: flex;
+    justify-content:left;
     font-family: 'Libre Baskerville', serif;
+    font-family: 'Special Elite', cursive;
     font-family: 'Zilla Slab', serif;
+    font-size: 80px;
     color: #375394;
-    font-size: 37px;
-
 }
+    
 
 h3 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -26,6 +28,17 @@ h3 {
     color: #375394;
 
 }
+
+h4 {
+    display: flex;
+    justify-content:left;
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Zilla Slab', serif;
+    color: #375394;
+}
+
 section {
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
@@ -35,7 +48,7 @@ ul {
     line-height: 40px;
 }
 
-ul img {
+section ul img {
     float: right;
     margin-right: 5%;
 }
