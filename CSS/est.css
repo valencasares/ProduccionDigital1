@@ -79,7 +79,7 @@ section {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type:none;
     text-align: center;
 
 }
@@ -159,7 +159,7 @@ section .personajes {
 section .personajes li {
     display: flex;
     justify-content: left;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top: 5px;
     font-size: 20px;
     line-height: 40px;  
@@ -248,7 +248,12 @@ header img {
     margin-top: 2%;
     
 }
-
+.dunder {
+    width: 280px;
+    height: 150px;
+    float: right;
+    margin-right: 3%;
+}
 .fuente1 {
     line-height: 3%;
 }
@@ -346,12 +351,20 @@ footer img {
         height: 50px;
     }
     .icon {
-        margin-right: 15%;
+        margin-right: 10%;
         margin-bottom: 10%;
     }
-    .navegador ul li a {
-
+    ul {
+        text-align:left
     }
+    li {
+        display: flex;
+        vertical-align:auto
+    }
+    li a {
+        font-size: 20px;
+    }
+
     h5 {
         font-size: 20px;
     }
@@ -363,6 +376,80 @@ footer img {
         width: 170px;
         height: 110px;
         float: left;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    div img {
+        width: 150px;
+        height: 100px;
+    }
+    section .personajes img {
+        width: 180px;
+        height: 110px;
+    }
+    h6 {
+        font-size: 20px;
+    }
+    section .personajes li {
+        font-size: 15px;
+    }
+    .michael {
+        font-size: 500px;
+    }
+    .michael img {
+        width: 180px;
+        height: 110px;
+    }
+    .dwight {
+        font-size: 600px;
+        margin-top: 30%;
+    }
+    .dwight img {
+        width: 180px;
+        height: 110px;
+    }
+    .stanley {
+        font-size: 600px;
+        margin-top: 30%;
+    }
+    .stanley img {
+        width: 180px;
+        height: 110px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    .secundario img {
+        width: 180px;
+        height: 180px;
+    }
+    .secundario .info li {
+        font-size: 20px;
+    }
+    .argumento {
+        line-height: 80%;
+    }
+    .dunder {
+        width: 110px;
+        height: 70px;
+    }
+    .fuente1 {
+        line-height: 80%;
+    }
+    .fuente2 {
+        line-height: 80%;
+    }
+    .fuente3 {
+        line-height: 80%;
+    }
+    .terciario img {
+        width: 180px;
+        height: 100px;
+    }
+
+    .footerpersonajes {
+        margin-top: 30%;
     }
     footer {
         display: flex;
