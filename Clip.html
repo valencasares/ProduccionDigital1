@@ -1,45 +1,64 @@
-<head> 
+<!DOCTYPE html>
+<html>
+
+ <head> 
     <title>The Office Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Special+Elite&family=Zilla+Slab:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/est.css" /> 
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
 
-<body>
- <header>
- <h2>Clip</h2>
-  <section>
-    <nav id="navegador">
-      <ul>
-       <li><a href="index.html">Inicio</a></li>
+ <body>
+   <header>
+     <h2>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+       Clip 
+     </h2>
+     <section>
+       <nav id="navegador">
+         <ul>
+           <li><a href="index.html">Inicio</a></li>
 
-       <li><a href="Personajes.html">Personajes</a></li>
+           <li><a href="Personajes.html">Personajes</a></li>
 
-       <li><a href="Info.html">Informacion</a></li>
+           <li><a href="Info.html">Informacion</a></li>
 
-       <li><a href="criticas.html">Criticas</a></li>
+           <li><a href="criticas.html">Criticas</a></li>
 
-       <li><a href="formulario.html">Contacto</a></li>
-     </ul>
-    </nav>
-  </section>
- </header>
+           <li><a href="formulario.html">Contacto</a></li>
+         </ul>
+       </nav>
+      </section>
+    </header>
 
 
     
-<article>
-    
-    <h4>Hagan click <a href="https://www.youtube.com/watch?v=gO8N3L_aERg&t=206s" target="_blank"> ACA </a> y van a poder ver la escena mas graciosa de todaa la serieee!</h4>
-   <p>Esta esena es una de las escenas con mas criticas positvas del mundo de las series. Es una escena caótica pero a la vez graciosa y divertida de ver.</p>
-  </article>
-  <div>
-    <img src="imagenes/clip2.gif">
-    <img src="imagenes/clip3.gif">
-   <img src="imagenes/firedrill.gif">
-  </div> 
+   <article>
+     <h4>Hagan click <a href="https://www.youtube.com/watch?v=gO8N3L_aERg&t=206s" target="_blank"> ACA </a> y van a poder ver la escena mas graciosa de todaa la serieee!</h4>
+     <p>Esta esena es una de las escenas con mas criticas positvas del mundo de las series. Es una escena caótica pero a la vez graciosa y divertida de ver.</p>
+   </article>
+   <div>
+     <img src="imagenes/clip2.gif">
+     <img src="imagenes/clip3.gif">
+     <img src="imagenes/firedrill.gif">
+   </div> 
 
- <footer>
-  <p>Para ver mas contenido acerca de este capitulo segui mi cuenta de instagram :), subo memes, giffs, escenas divertidas, datos interesantes y divertidos de cada actor, bloopers, entre otras cosas.</p>
-  <img src="imagenes/logoinstagram.webp" alt="Instagram">
-</footer>
+   <footer>
+     <p>Para ver mas contenido acerca de este capitulo segui mi cuenta de instagram :), subo memes, giffs, escenas divertidas, datos interesantes y divertidos de cada actor, bloopers, entre otras cosas.</p>
+     <img src="imagenes/logoinstagram.webp" alt="Instagram">
+   </footer>
 
-</body>
+   <script type="text/javascript">
+    function myFunction(){
+     let x = document.getElementById("navegador")
+     if (x.className !== "responsive"){
+         x.className = "responsive"; 
+      }  else {
+        x.className = navegador; 
+        }
+      }
+ 
+   </script> 
+
+  </body>
+</html>

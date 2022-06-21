@@ -119,27 +119,37 @@ div img {
     height: 250px;
 }
 img {
-    width: 230px;
-    height: 120px;
+    width: 280px;
+    height: 150px;
     float: right;
     margin-right: 3%;
 }
 
-article section .galeria {
-    display: flex;
-    margin-bottom: 15%;
-    margin-left: 350px;
-    display: flex; 
-    justify-content: space-between;
-   
+.primario {
+    padding: 2rem;
 }
-article section .galeria a {
-    display: block;
-    justify-content: space-between;
+.galeria {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.galeria a {
     width: 10px;
     height: 10px;
-    margin-top: 2rem;
-    padding: 2.5rem;
+}
+
+article section .galeria {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 15%;
+    
+    
+   
+}
+
+.example-image {
+    width: 300px;
+    height: 200px;
 }
 
 section .personajes {
@@ -149,7 +159,7 @@ section .personajes {
 section .personajes li {
     display: flex;
     justify-content: left;
-    margin-left: 3%;
+    margin-left: 5%;
     margin-top: 5px;
     font-size: 20px;
     line-height: 40px;  
@@ -158,13 +168,12 @@ section .personajes li {
 section .personajes img {
     width: 700px;
     height: 400px;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 .michael {
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
     line-height: 4%;
-
 }
 
 .michael img {
@@ -177,7 +186,7 @@ section .personajes img {
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
     display: block;
-    margin-top: 25%;
+    margin-top: 22%;
     line-height: 3%;
 }
 
@@ -191,15 +200,15 @@ section .personajes img {
     font-family: 'Libre Baskerville', serif;
     font-size: 20px;
     display: block;
-    margin-top: 25%;
+    margin-top: 22%;
     line-height: 3%;
     
 }
 
 .stanley img {
     float: left;
-    width: 400px;
-    height: 250px;
+    width: 430px;
+    height: 260px;
     margin-left: 3%;
     margin-bottom: 5%;
 
@@ -221,7 +230,7 @@ section .info li {
 
 .secundario img {
     float: right;
-    width: 500px;
+    width: 470px;
     height: 450px;
     margin-left: 3%;
     margin-bottom: 5%;
@@ -280,6 +289,16 @@ footer {
 
 }
 
+.footerpersonajes {
+    display: flex;
+    position: absolute;
+    margin-top: 20%;
+}
+.footercriticas {
+    position: absolute;
+    margin-top: 5%
+}
+
 footer img {
     padding-bottom: 1rem;
     width: 100%;
@@ -288,6 +307,9 @@ footer img {
     max-width: 2.5rem;
 }
 
+.icon {
+    display: none;
+}
 @media screen and (max-width: 480px) {
     header {
         flex-wrap: wrap;
@@ -297,11 +319,56 @@ footer img {
     header div, header nav {
         flex: 1 0 50%;
     }
+    header nav {
+        flex-basis: 100%;
+    }
+    nav ul {
+        display: none;
+    }
     nav.responsive ul {
         display: block;
         width: 100%;
         display: inline-block;
-        
+        justify-content: center;
+    }
+    section {  
+        max-width: 480px;
+        width: 100%;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    img {
+        width: 100px;
+        height: 50px;
+    }
+    .icon {
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+    .navegador ul li a {
+
+    }
+    h5 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .example-image {
+        padding: 1rem;
+        width: 170px;
+        height: 110px;
+        float: left;
+    }
+    footer {
+        display: flex;
+        position: absolute;
+        margin-top: 30%;
     }
     
 }
+

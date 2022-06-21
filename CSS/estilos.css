@@ -233,3 +233,12 @@ footer img {
         font-size: 20px;
     }
 }
+
+
+
+display: block;
+    justify-content: space-between;
+    width: 10px;
+    height: 10px;
+    margin-top: 2rem;
+    padding: 2.5rem;

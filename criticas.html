@@ -1,7 +1,12 @@
+<!DOCTYPE html>
+<html>
+
+
 <head> 
     <title>The Office Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Special+Elite&family=Zilla+Slab:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/est.css"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body> 
@@ -9,7 +14,10 @@
 
         <img src="imagenes/dunddermifflin.jpg">
 
-        <h2 class="criticas">Criticas</h2>
+        <h2>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+          Criticas
+        </h2>
         <section>
             <nav id="navegador">
             <ul>
@@ -55,11 +63,24 @@
      <a href="https://cultural-learnings.com/2009/02/02/the-office-stress-relief/">Fuente</a>
   </section>
 
- <footer>
+ <footer class="footercriticas">
      <p>Para ver mas contenido acerca de este capitulo segui mi cuenta de instagram :), subo memes, giffs, escenas divertidas, datos interesantes y divertidos de cada actor, bloopers, entre otras cosas.</p>
      <img src="imagenes/logoinstagram.webp" alt="Instagram">
    </footer>
+
+   <script type="text/javascript">
+    function myFunction(){
+      let x = document.getElementById("navegador")
+      if (x.className !== "responsive"){
+          x.className = "responsive"; 
+    }  else {
+         x.className = navegador; 
+    }
+  }
+  </script> 
+  
 </body> 
+</html>
 
 
 
