@@ -164,38 +164,42 @@ section .personajes img {
     height: 400px;
     margin-top: 3%;
 }
-.michael {
+.michael p {
     font-family: 'Libre Baskerville', serif;
-    font-size: 20px;
+    font-size: 24px;
 } 
 
 .michael img {
     width: 400px;
     height: 250px;
+    display: block;
+    float: left;
     margin-left: 3%;
     margin-top: 2%;
-    float: left;
+    
 }
+
 .dwight {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 20px;
     display: block;
-    margin-top: 2%;
-    margin-top: 10%;
+    padding-top: 4rem;
+}
+.dwight p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
 }
 
 .dwight img {
-    float: left;
     width: 400px;
     height: 250px;
+    float: left;
     margin-left: 3%;
-    margin-top: 2%;
+    margin-top: 3%;
 }
-.stanley {
+.stanley p {
     font-family: 'Libre Baskerville', serif;
-    font-size: 20px;
+    font-size: 24px;
     display: block;
-    margin-top: 6%;
+    
 }
 
 .stanley img {
@@ -220,6 +224,9 @@ section .info li {
     font-size: 30px;
     line-height: 40px; 
 
+}
+.argumento p {
+    font-size: 23px;
 }
 
 .secundario img {
@@ -328,6 +335,10 @@ footer img {
 .icon {
     display: none;
 }
+
+.iconInfo {
+    display: none;
+}
 @media screen and (max-width: 480px) {
     header {
         flex-wrap: wrap;
@@ -407,7 +418,7 @@ footer img {
         display: flex;
         justify-content: center;
         margin-right: 20%;
-        margin-top: 5%;
+        margin-top: 8%;
     }
     .icon {
         display: inline-block;
@@ -415,7 +426,10 @@ footer img {
 
     }
     .iconInfo {
-        padding-left: 2rem;
+        display: inline-block;
+        justify-content: left;
+        padding: 2rem;
+        margin-left: 5%;
     }
 
     .imgclip {
@@ -452,12 +466,12 @@ footer img {
         position: absolute;
         width: 450px;
         height: 300px;
-        margin-top: 45%;
+        margin-top: 50%;
         padding-top: 1rem;
     }
     .dwight {
         display: block;
-        margin-top: 60%;
+        margin-top: 50%;
 
     }
     .dwight p {
@@ -470,7 +484,7 @@ footer img {
         position: absolute;
         width: 450px;
         height: 300px;
-        margin-top: 75%;
+        margin-top: 80%;
         padding-top: 1rem;
     }
     .stanley {
@@ -486,7 +500,7 @@ footer img {
         position: absolute;
         width: 450px;
         height: 300px;
-        margin-top: 65%;
+        margin-top: 80%;
         padding-top: 1rem;
     }
     h2 {
@@ -545,6 +559,9 @@ footer img {
     .footerpersonajes {
         position: absolute;
         margin-top:70%;
+    }
+    .footerformulario {
+        position: absolute;
     }
     footer {
         display: flex;
